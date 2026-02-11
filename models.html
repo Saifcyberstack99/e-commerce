@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Models - Explore Our Range</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" alt="BMW Logo" class="logo-img">
+                    <span class="logo-text">BMW</span>
+                </div>
+                
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="models.html" class="active"><i class="fas fa-car"></i> Models</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Technology</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+                
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>BMW Model Range</h1>
+            <p>Discover the perfect BMW for your lifestyle</p>
+        </div>
+    </section>
+
+    <section class="section models-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Models</button>
+                <button class="filter-btn" data-filter="sedan">Sedans</button>
+                <button class="filter-btn" data-filter="suv">SUVs</button>
+                <button class="filter-btn" data-filter="electric">Electric</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+            
+            <div class="models-grid detailed">
+                <!-- BMW 3 Series -->
+                <div class="model-card detailed" data-category="sedan">
+                    <div class="model-header">
+                        <h3>BMW 3 Series</h3>
+                        <span class="price">Starting at $41,800</span>
+                    </div>
+                    <div class="model-image-large" style="background: linear-gradient(135deg, #0066b3 0%, #003c71 100%);">
+                        <i class="fas fa-car fa-3x"></i>
+                    </div>
+                    <div class="model-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>0-60: 5.6s</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>30 MPG</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-cogs"></i>
+                            <span>255 HP</span>
+                        </div>
+                    </div>
+                    <p>The iconic sports sedan with perfect 50/50 weight distribution and dynamic handling.</p>
+                    <a href="#" class="btn btn-primary">Configure & Price</a>
+                </div>
+                
+                <!-- BMW X5 -->
+                <div class="model-card detailed" data-category="suv">
+                    <div class="model-header">
+                        <h3>BMW X5</h3>
+                        <span class="price">Starting at $61,600</span>
+                    </div>
+                    <div class="model-image-large" style="background: linear-gradient(135deg, #e6b220 0%, #b38f00 100%);">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                    </div>
+                    <div class="model-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>0-60: 5.3s</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>25 MPG</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-cogs"></i>
+                            <span>335 HP</span>
+                        </div>
+                    </div>
+                    <p>The Sports Activity Vehicle that combines luxury, versatility, and commanding presence.</p>
+                    <a href="#" class="btn btn-primary">Configure & Price</a>
+                </div>
+                
+                <!-- BMW i8 -->
+                <div class="model-card detailed" data-category="electric sports">
+                    <div class="model-header">
+                        <h3>BMW i8</h3>
+                        <span class="price">Starting at $147,500</span>
+                    </div>
+                    <div class="model-image-large" style="background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);">
+                        <i class="fas fa-bolt fa-3x"></i>
+                    </div>
+                    <div class="model-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>0-60: 4.2s</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-plug"></i>
+                            <span>Electric + Gas</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-cogs"></i>
+                            <span>369 HP</span>
+                        </div>
+                    </div>
+                    <p>The futuristic plug-in hybrid sports car with revolutionary design and sustainable performance.</p>
+                    <a href="#" class="btn btn-primary">Configure & Price</a>
+                </div>
+                
+                <!-- BMW M5 -->
+                <div class="model-card detailed" data-category="sports sedan">
+                    <div class="model-header">
+                        <h3>BMW M5</h3>
+                        <span class="price">Starting at $105,100</span>
+                    </div>
+                    <div class="model-image-large" style="background: linear-gradient(135deg, #cc0000 0%, #990000 100%);">
+                        <i class="fas fa-tachometer-alt fa-3x"></i>
+                    </div>
+                    <div class="model-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>0-60: 3.2s</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>17 MPG</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-cogs"></i>
+                            <span>600 HP</span>
+                        </div>
+                    </div>
+                    <p>The high-performance business sedan with racetrack capabilities and luxury amenities.</p>
+                    <a href="#" class="btn btn-primary">Configure & Price</a>
+                </div>
+                
+                <!-- BMW i4 -->
+                <div class="model-card detailed" data-category="electric sedan">
+                    <div class="model-header">
+                        <h3>BMW i4</h3>
+                        <span class="price">Starting at $52,200</span>
+                    </div>
+                    <div class="model-image-large" style="background: linear-gradient(135deg, #00a8a8 0%, #006666 100%);">
+                        <i class="fas fa-charging-station fa-3x"></i>
+                    </div>
+                    <div class="model-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>0-60: 5.5s</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-bolt"></i>
+                            <span>300 Mile Range</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-cogs"></i>
+                            <span>335 HP</span>
+                        </div>
+                    </div>
+                    <p>The all-electric Gran Coupé that combines sustainable mobility with BMW's signature driving dynamics.</p>
+                    <a href="#" class="btn btn-primary">Configure & Price</a>
+                </div>
+                
+                <!-- BMW X7 -->
+                <div class="model-card detailed" data-category="suv">
+                    <div class="model-header">
+                        <h3>BMW X7</h3>
+                        <span class="price">Starting at $78,800</span>
+                    </div>
+                    <div class="model-image-large" style="background: linear-gradient(135deg, #666666 0%, #333333 100%);">
+                        <i class="fas fa-suv fa-3x"></i>
+                    </div>
+                    <div class="model-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>0-60: 5.8s</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>22 MPG</span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-cogs"></i>
+                            <span>375 HP</span>
+                        </div>
+                    </div>
+                    <p>The luxury flagship SUV offering supreme comfort, sophisticated technology, and commanding road presence.</p>
+                    <a href="#" class="btn btn-primary">Configure & Price</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BMW Models</h3>
+                    <p>Explore our complete range of vehicles designed for every driving preference.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Vehicle Types</h3>
+                    <ul>
+                        <li><a href="#">Sedans</a></li>
+                        <li><a href="#">SUVs</a></li>
+                        <li><a href="#">Electric Vehicles</a></li>
+                        <li><a href="#">Sports Cars</a></li>
+                        <li><a href="#">Luxury Series</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Find a Dealer</h3>
+                    <p>Locate your nearest BMW dealership for test drives and personalized consultations.</p>
+                    <a href="contact.html" class="btn btn-outline">Find Dealer</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 BMW AG. All rights reserved. Vehicle specifications may vary by market.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

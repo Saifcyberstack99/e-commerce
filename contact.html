@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BMW - Get in Touch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" alt="BMW Logo" class="logo-img">
+                    <span class="logo-text">BMW</span>
+                </div>
+                
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="models.html"><i class="fas fa-car"></i> Models</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Technology</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+                
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Contact BMW</h1>
+            <p>We're here to assist you with your BMW journey</p>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions about our vehicles, need assistance, or want to schedule a test drive? Our team is ready to help.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Sales & Enquiries</h3>
+                                <p>1-800-831-1117</p>
+                                <p>Mon-Fri: 9:00 AM - 9:00 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <p>info@bmw.com</p>
+                                <p>customer.service@bmw.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Headquarters</h3>
+                                <p>BMW AG</p>
+                                <p>Petuelring 130, 80809 Munich</p>
+                                <p>Germany</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Dealership Hours</h3>
+                                <p>Monday - Friday: 9 AM - 8 PM</p>
+                                <p>Saturday: 9 AM - 6 PM</p>
+                                <p>Sunday: 11 AM - 5 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject">
+                                    <option value="">Select a subject</option>
+                                    <option value="test-drive">Schedule Test Drive</option>
+                                    <option value="sales">Vehicle Purchase</option>
+                                    <option value="service">Vehicle Service</option>
+                                    <option value="parts">Parts & Accessories</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="model">Vehicle of Interest</label>
+                            <select id="model">
+                                <option value="">Select a model</option>
+                                <option value="3-series">3 Series</option>
+                                <option value="5-series">5 Series</option>
+                                <option value="7-series">7 Series</option>
+                                <option value="x3">X3</option>
+                                <option value="x5">X5</option>
+                                <option value="x7">X7</option>
+                                <option value="i4">i4</option>
+                                <option value="i7">i7</option>
+                                <option value="ix">iX</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">Subscribe to BMW newsletter for updates and offers</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dealer-section">
+        <div class="container">
+            <h2 class="section-title">Find a BMW Dealer</h2>
+            <p class="section-subtitle">Locate your nearest authorized BMW dealership</p>
+            
+            <div class="dealer-search">
+                <div class="search-box">
+                    <input type="text" placeholder="Enter your city, state, or zip code">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+            
+            <div class="dealers-grid">
+                <div class="dealer-card">
+                    <h3>BMW of Manhattan</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 555 West 57th Street, New York, NY</p>
+                    <p><i class="fas fa-phone"></i> (212) 555-1234</p>
+                    <a href="#" class="dealer-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="dealer-card">
+                    <h3>BMW of Beverly Hills</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 9020 Wilshire Blvd, Beverly Hills, CA</p>
+                    <p><i class="fas fa-phone"></i> (310) 555-5678</p>
+                    <a href="#" class="dealer-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="dealer-card">
+                    <h3>BMW of Chicago</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 1530 N Clark Street, Chicago, IL</p>
+                    <p><i class="fas fa-phone"></i> (312) 555-9012</p>
+                    <a href="#" class="dealer-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact BMW</h3>
+                    <p>Your connection to the BMW world. We're here to assist with all your automotive needs.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Contact</h3>
+                    <ul>
+                        <li><a href="tel:18008311117"><i class="fas fa-phone"></i> 1-800-831-1117</a></li>
+                        <li><a href="mailto:info@bmw.com"><i class="fas fa-envelope"></i> info@bmw.com</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i> Live Chat</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Emergency Assistance</h3>
+                    <p>For roadside assistance, call BMW Roadside Service available 24/7.</p>
+                    <p><strong>Emergency: 1-800-333-4BMW</strong></p>
+                    <a href="#" class="btn btn-outline">Roadside Service</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 BMW AG. All rights reserved. For immediate assistance, contact your local BMW dealership.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
